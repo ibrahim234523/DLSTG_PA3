@@ -1,0 +1,62 @@
+{
+  "variant": "hybrid",
+  "best_epoch": 29,
+  "epochs_run": 30,
+  "training_seconds": 799.8823543330655,
+  "seconds_per_epoch": 26.662745144435515,
+  "num_parameters": 27989,
+  "device": "mps",
+  "val": {
+    "mae": 43.924053553410914,
+    "rmse": 71.0729792971248,
+    "mae_per_horizon": [
+      34.78339706290368,
+      41.46359396864294,
+      46.95663496236325,
+      52.49258821973378
+    ],
+    "rmse_per_horizon": [
+      55.23699489204589,
+      66.71679005781188,
+      75.43294496702607,
+      83.74418593524979
+    ]
+  },
+  "test": {
+    "mae": 53.1030099640911,
+    "rmse": 83.53740240072258,
+    "mae_per_horizon": [
+      40.3087725112002,
+      49.77934560953672,
+      57.484561654775874,
+      64.83936008085162
+    ],
+    "rmse_per_horizon": [
+      62.703406048342764,
+      78.04245364455556,
+      89.22066954550262,
+      99.65601248478326
+    ]
+  },
+  "config": {
+    "seed": 42,
+    "hidden_dim": 32,
+    "embedding_dim": 10,
+    "top_k": 20,
+    "learn_alpha": true,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "max_epochs": 30,
+    "patience": 5,
+    "train_stride": 1,
+    "processed_dir": "../data/processed",
+    "results_dir": "../results_residual",
+    "checkpoint_dir": "../checkpoints_residual",
+    "prediction_sensors": [
+      0,
+      100,
+      300
+    ]
+  },
+  "final_alpha": 0.055041879415512085
+}

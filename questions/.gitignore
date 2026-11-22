@@ -9,3 +9,4 @@ __pycache__/
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+checkpoints_residual/
